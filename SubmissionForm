@@ -1,0 +1,73 @@
+Last name: Yahn
+First name: Bryce
+Net ID: 30876583
+
+• Did you do Part 1?
+
+Yes
+
+
+• Where are the abstract elements based on the formal model of adversarial search
+defined?
+
+The class State is the abstract element representing the state and containing the Actions and Transition Model.
+
+
+• Where are the specific implementations of those elements for Checkers defined?
+
+The state is defined in the state class.  The initial state is a state that is first defined in the file Initialize.
+The function for determining terminal state is in the file State. The applicability function is called get_possible_actions()
+and it is also in the class state. This function returns a queue containing the Resulting state of each possible action.
+The utility function is also in the state class.
+
+
+• Where is your implementation of the MINIMAX algorithm?
+
+In the file MoveMaker
+
+
+• What class or file do we run to run your 4x4 game?
+
+MainGame
+
+
+• Does it play quickly and perfectly?
+
+Yes
+
+
+• Did you do part 2?
+
+Yes
+
+
+• Where can we find your implementation of H-Minimax?
+
+In the file MoveMaker
+
+
+• Where can we find the definition of your heuristic function?
+
+In the file MoveMaker called eval()
+
+
+• Where can we find your implementation of alpha-beta pruning?
+
+Inside the H-Minimax function
+
+
+• What class or file do we run to run your 8x8 game?
+
+MainGame
+
+
+• Comment very briefly on how well it plays
+
+I am not very good at checkers, but it has consistently beat me and one of my friends.  If the cutoff is a depth of 6,
+it will answer in <15s, a depth of 7 will answer in <30s, and a depth of 8 will answer in <90s
+
+
+• Python programmers: Did you use good object-oriented design, with classes, avoiding global functions and variables,
+and doing very little outside of any method or function?
+
+Yes
